@@ -1,0 +1,28 @@
+{
+  "name": "command-buttons",
+  "version": "0.1.0",
+  "description": "Pone botones [Ejecutar] y [Copiar] al lado de cada comando de shell que Claude escribe en un bloque de código, para correrlo o copiarlo sin seleccionar texto a mano.",
+  "author": {
+    "name": "Farid Murzone"
+  },
+  "userConfig": {
+    "runInBackground": {
+      "type": "boolean",
+      "description": "Ejecutar en segundo plano (no bloquea la sesión; la salida se lee con BashOutput)",
+      "default": false,
+      "title": "Ejecutar en segundo plano"
+    },
+    "confirmPattern": {
+      "type": "string",
+      "description": "Regex (sin flags) de comandos que piden una segunda pulsación para confirmar. Vacío = nunca confirmar.",
+      "default": "\\b(rm\\s+-[rf]|delete|destroy|drop\\s+(table|database)|truncate|terraform\\s+(apply|destroy)|kubectl\\s+delete|--force|force-push|push\\s+--force|revoke|remove-iam-policy-binding|set-iam-policy|firestore\\s+(import|databases)|uma-v2)\\b",
+      "title": "Comandos que piden confirmación"
+    },
+    "maxButtons": {
+      "type": "string",
+      "description": "Cuántos comandos por mensaje reciben botones, como máximo.",
+      "default": "8",
+      "title": "Máximo de comandos por mensaje"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "description": "Dibuja botones Ejecutar/Copiar bajo cada bloque de comandos de un mensaje del asistente, y los sirve con Bash y pbcopy.",
+  "modules": ["./register.tsx"]
+}

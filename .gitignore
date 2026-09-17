@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+package-lock.json
+.npm
+
+# Generated files
+.claude/types/
+*.d.ts
+
+# Build artifacts
+dist/
+build/
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+coverage/
+.nyc_output
+
+# Environment
+.env
+.env.local

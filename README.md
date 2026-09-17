@@ -35,7 +35,7 @@ Claude often suggests shell commands, but copying and running them involves:
 
 ```bash
 # Clone or download this repo
-git clone https://github.com/faridmurzone/command-buttons.git ~/.claude/skills/command-buttons
+git clone https://github.com/faridmurzone/command-buttons-claude-code.git ~/.claude/skills/command-buttons
 
 # Verify the plugin loads
 claude plugin validate ~/.claude/skills/command-buttons
